@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App || Budget</title>
+    <link rel="icon" href="./Images/bank.png">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <!-- google font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet" />
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- header -->
+        <div class="header">
+            <h1>Budget App</h1>
+        </div>
+
+        <!-- form section -->
+        <section class="form_section">
+            <form action="" method="post">
+                <div class="form_container">
+                    <div class="group_position1">
+                        <div class="label">
+                            <label for="">Your Budget:</label>
+                        </div>
+                        <div class="group_position2">
+                            <div>
+                                <input id="calculate" type="number" placeholder="Enter your Budget">
+                            </div>
+                            <div class="btn">
+                                <button onclick="budget()" type="button">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group_position3">
+                        <div class="group_position4">
+                            <div class="label">
+                                <label for="">Expenses:</label>
+                            </div>
+                            <div class="exp_input">
+                                <input id="expenses" class="mid_input" type="text" placeholder="Enter your Expenses Desc!">
+                            </div>
+                        </div>
+                        <div class="group_position5">
+                            <div class="exp_amount">
+                                <input id="expense_amount" type="number" placeholder="Expenses Amount">
+                            </div>
+                            <div class="btn">
+                                <button id="btn2" onclick="exp()" type="button">Add Expenses</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- aggregate section -->
+        <section class="aggregate_section">
+            <!-- Aggregate function -->
+            <div class="aggregate_container">
+
+                <div class="aggregate_boxes">
+                    <div class="icon_box">
+                        <i class=" icon1 fa fa-bank fa-2x"></i>
+                    </div>
+                    <div>
+                        <p id="displayAmount">&#36; 0.00</p>
+                        <p>Budget</p>
+                    </div>
+                </div>
+
+                <div class="aggregate_boxes">
+                    <div class="icon_box">
+                        <!-- <i class=" icon fas fa-wallet fa-2x"></i> -->
+                        <i class="icon2 fa fa-credit-card fa-2x"></i>
+                    </div>
+                    <div>
+                        <p id="displayexpense">&#36; 0.00</p>
+                        <p>Expenses</p>
+                    </div>
+
+                </div>
+                <div class="aggregate_boxes">
+                    <div class="icon_box">
+                        <i class=" icon3 fa fa-dollar fa-2x"></i>
+                    </div>
+                    <div>
+                        <p id="balance">&#36;0.00</p>
+                        <p>Balance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- aggregate list section -->
+        <section class="aggregate_list_section">
+            <div class="aggregate_list_container">
+                <div class="title">
+                    <h2>Budget Details</h2>
+                </div>
+                <div id="list_item">
+                    <!-- <p id="paragraph"></p> -->
+                    <!-- <p><span>2</span> <span> &#36; 20</span> <span><button class="grn_btn">Edit</button> <button class="red_btn">Delete</button></span></p> -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./JS/Script.js"></script>
+</body>
+
+</html>
