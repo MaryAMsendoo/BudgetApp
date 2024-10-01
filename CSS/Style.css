@@ -289,5 +289,10 @@ input:focus{
     padding: 20px;
   }
 
+  .form_section,
+.aggregate_section {
+  padding: 17px 4px 0px;
+}
+
  }
 
