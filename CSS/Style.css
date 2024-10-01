@@ -285,5 +285,9 @@ input:focus{
     margin-left: 5px;
   }
 
+  body{
+    padding: 20px;
+  }
+
  }
 
