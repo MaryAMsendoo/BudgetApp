@@ -221,13 +221,7 @@ input:focus{
 }
 
 /* form groups resizing */
-@media(max-width: 563px){
-  .grn_btn,
-  .red_btn {
-    margin: 3px;
-  }
-}
-@media (max-width: 656px) {
+@media (max-width: 679px) {
   .header h1 {
     font-size: 2rem;
     margin-top: 8px;
@@ -238,15 +232,29 @@ input:focus{
   }
   .group_position1,
   .group_position3,
-  .group_position4 {
+  .group_position4,  .group_position5, 
+  .group_position2 {
     flex-direction: column;
   }
-
   .group_position4 {
     margin-bottom: 5px;
   }
-  .group_position4 input {
+
+  input, #btn1, #btn2{
     border-radius: 3px;
+    padding: 9px 0px;
+    font-size: 0.9rem;
+  }
+  input {
+    margin-left: 0px;
+    display: inline-block;
+    width: 99%;
+  }
+  #btn1, #btn2{
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+ 
   }
   .label {
     margin-left: 5px;
@@ -268,31 +276,8 @@ input:focus{
     height: auto;
   }
 }
- @media(min-width: 1037px){
-    .container {
-        height: auto;
-      }
- }
 
- @media(max-width: 390px){
-  .group_position5{
-    flex-direction: column;
-  }
+ 
 
-  #btn2{
-   border-radius: 3px;
-    margin-top: 5px;
-    margin-left: 5px;
-  }
-
-  body{
-    padding: 20px;
-  }
-
-  .form_section,
-.aggregate_section {
-  padding: 17px 4px 0px;
-}
-
- }
+ 
 

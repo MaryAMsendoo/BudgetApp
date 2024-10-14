@@ -27,6 +27,7 @@
 
         <!-- form section -->
         <section class="form_section">
+            <p id="error_message" style="text-align: center;"></p>
             <form action="" method="post">
                 <div class="form_container">
                     <div class="group_position1">
@@ -34,15 +35,15 @@
                             <label for="">Your Budget:</label>
                         </div>
                         <div class="group_position2">
-                            <div>
+                            <div class="input1">
                                 <input id="calculate" type="number" placeholder="Enter your Budget">
                             </div>
                             <div class="btn">
-                                <button onclick="budget()" type="button">Calculate</button>
+                                <button id="btn1" onclick="budget()" type="button">Calculate</button>
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="group_position3">
                         <div class="group_position4">
                             <div class="label">
@@ -75,28 +76,27 @@
                         <i class=" icon1 fa fa-bank fa-2x"></i>
                     </div>
                     <div>
-                        <p id="displayAmount">&#36; 0.00</p>
+                        <p id="displayAmount">&#8358; 0.00</p>
                         <p>Budget</p>
                     </div>
                 </div>
 
                 <div class="aggregate_boxes">
                     <div class="icon_box">
-                        <!-- <i class=" icon fas fa-wallet fa-2x"></i> -->
                         <i class="icon2 fa fa-credit-card fa-2x"></i>
                     </div>
                     <div>
-                        <p id="displayexpense">&#36; 0.00</p>
+                        <p id="displayexpense">&#8358; 0.00</p>
                         <p>Expenses</p>
                     </div>
 
                 </div>
                 <div class="aggregate_boxes">
                     <div class="icon_box">
-                        <i class=" icon3 fa fa-dollar fa-2x"></i>
+                        <i class=" icon3 fa-solid fa-naira-sign fa-2x">&#8358;</i>
                     </div>
                     <div>
-                        <p id="balance">&#36;0.00</p>
+                        <p id="balance">&#8358;0.00</p>
                         <p>Balance</p>
                     </div>
                 </div>
